@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <title>Login</title>
+    <link rel="icon" type="image/jpg" href="https://mohamedjellal.me/Estudis/N_Netflix.png" />
+    <link href="styles/login.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+    <div class="bg-image"></div>
+    <header>
+        <nav>
+            <img src="https://mohamedjellal.me/Estudis/logoNetflix.png" alt="Icon" />
+        </nav>
+    </header>
+
+
+    <form action="" id="m_form">
+        <div class="headingsContainer">
+            <h3>Sign in</h3>
+            <p>For Sign in use <br>username:admin <br>Password:admin</p>
+        </div>
+
+
+        <div class="mainContainer">
+            <!-- Username -->
+            <label for="username">Your username</label>
+            <input type="text" id="email" placeholder="Enter Username(admin)" name="username" required>
+
+            <br><br>
+
+            <!-- Password -->
+            <label for="pswrd">Your password</label>
+            <input type="password" id="password" placeholder="Enter Password(admin)" name="pswrd" required>
+
+            <!-- sub container for the checkbox and forgot password link -->
+            <div class="subcontainer">
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+                <p class="forgotpsd"> <a href="#">Forgot Password?</a></p>
+            </div>
+
+            <!-- Submit button -->
+            <input type="submit" value="Login" />
+
+            <!-- Sign up link -->
+            <p class="register">Not a member? <a href="#">Register here!</a></p>
+
+        </div>
+
+    </form>
+    <script src="./js/login.js"></script>
+</body>
+
+</html>

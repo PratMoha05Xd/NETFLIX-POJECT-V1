@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avatars</title>
+  <link rel="icon" type="image/jpg" href="https://mohamedjellal.me/Estudis/N_Netflix.png" />
+  <link href="styles/index.css" rel="stylesheet" type="text/css">
+
+  <script>
+    window.onload = function () {
+      // get all the profile elements by their class name
+      const profiles = document.querySelectorAll('.profile');
+
+      // loop through all the profile elements and add a click event listener to each one
+      profiles.forEach(profile => {
+        profile.addEventListener('click', () => {
+          // redirect the user to the desired page
+          window.location.href = "main.html";
+        });
+      });
+    }
+  </script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <img src="https://mohamedjellal.me/Estudis/logoNetflix.png" alt="Icon" />
+    </nav>
+  </header>
+
+  <h1
+    style="color: white;margin-top:12.5%;margin-bottom: 2%;display: flex;align-items: center;justify-content: center;">
+    Chose your Netflix Profile</h1>
+
+  <div class="profiles-container">
+    <div class="profile">
+      <img src="https://mohamedjellal.me/Estudis/profile1.png" alt="Avatar 1">
+      <span>Profile 1</span>
+    </div>
+
+    <div class="profile">
+      <img src="https://mohamedjellal.me/Estudis/profile2.png" alt="Avatar 2">
+      <span>Profile 2</span>
+    </div>
+
+    <div class="profile">
+      <img src="https://mohamedjellal.me/Estudis/profile3.jpg" alt="Avatar 3">
+      <span>Simo</span>
+    </div>
+
+    <div class="profile">
+      <img src="https://mohamedjellal.me/Estudis/profile4.jpg" alt="Avatar 4">
+      <span>Profile 4</span>
+    </div>
+
+    <div class="profile">
+      <img src="https://mohamedjellal.me/Estudis/profile5.jpg" alt="Avatar 5">
+      <span>Profile 5</span>
+    </div>
+  </div>
+
+
+
+</body>
+
+
+</html>

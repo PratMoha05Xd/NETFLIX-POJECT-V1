@@ -1,0 +1,138 @@
+body {
+  position: relative;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 100%;
+  height: 1092.33px;
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  background-image: url("https://mohamedjellal.me/Estudis/backlogin.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  backdrop-filter: blur(6px) saturate(80%);
+  -webkit-backdrop-filter: blur(6px) saturate(80%);
+}
+
+
+form {
+  width: 20rem;
+  margin-top: 4%;
+  margin-left: 20%;
+  margin-bottom: 0.5%;
+  color: whitesmoke;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(11, 15, 13, 0.582);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  border-color: rgb(59, 59, 59);
+  padding: 18px 20px;
+}
+
+input[type=text],
+input[type=password] {
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 5px;
+  padding: 15px 18px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  background-color: #ff2424;
+  color: white;
+  padding: 14px 20px;
+  border-radius: 5px;
+  margin: 7px 0;
+  width: 100%;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+button {
+  background-color: #ff2424;
+  color: white;
+  padding: 14px 20px;
+  border-radius: 5px;
+  margin: 7px 0;
+  width: 100%;
+  font-size: 18px;
+}
+
+button:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.headingsContainer {
+  text-align: center;
+}
+
+.headingsContainer p {
+  color: gray;
+}
+
+.mainContainer {
+  padding: 16px;
+}
+
+.imgback {
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+.subcontainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.subcontainer a {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+span.forgotpsd a {
+  float: right;
+  color: whitesmoke;
+  padding-top: 16px;
+}
+
+.forgotpsd a {
+  color: #ff2424;
+}
+
+.forgotpsd a:link {
+  text-decoration: none;
+}
+
+.register {
+  color: white;
+  text-align: center;
+}
+
+.register a {
+  color: #ff2424;
+}
+
+.register a:link {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  form {
+    width: 25rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  form {
+    width: 18rem;
+  }
+}

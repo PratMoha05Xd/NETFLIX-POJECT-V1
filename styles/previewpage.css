@@ -1,0 +1,413 @@
+body {
+  height: 100vh;
+  width: 100%;
+  display: inline-block;
+  font-family: Helvetica, Arial, sans-serif;
+  background-image: url("https://mohamedjellal.me/Estudis/NetflixPage.png");
+  background-size: cover;
+  background-repeat: repeat;
+}
+
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url("https://mohamedjellal.me/Estudis/NetflixPage.png");
+  background-size: cover;
+  background-repeat: repeat;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  background-attachment: fixed;
+}
+
+header {
+  background-color: #141414;
+  padding: 20px 40px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 120px;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+ul li a:hover {
+  background-color: #e50914;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+}
+
+.search-box input[type="text"] {
+  border: none;
+  padding: 10px;
+  margin-right: 10px;
+  background-color: #444;
+  color: #fff;
+}
+
+.search-box button {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.user-profile img {
+  width: 35px;
+  border-radius: 50%;
+}
+
+.hero-image-container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.hero-image-slider {
+  position: absolute;
+  display: flex;
+  width: calc(100% * 18);
+  animation: slide 20s linear infinite;
+}
+
+.hero-image-slider img {
+  width: calc(100% / 18);
+}
+
+.hero-image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to top, #141414 0%, transparent 100%);
+  z-index: 1;
+}
+
+@keyframes slide {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: calc(-100% * 5);
+  }
+}
+
+.hero-content {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.hero-content button {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero-content button:hover {
+  background-color: #f40612;
+}
+
+.hero-content button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.7);
+}
+
+
+
+
+h1 {
+  padding-top: 60px;
+}
+
+.wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.netflixLogo {
+  grid-area: nt;
+  object-fit: cover;
+  width: 100px;
+  max-height: 100%;
+
+  padding-left: 30px;
+  padding-top: 0px;
+}
+
+.netflixLogo img {
+  height: 35px;
+}
+
+#logo {
+  color: #E50914;
+  margin: 0;
+  padding: 0;
+}
+
+
+.main-nav {
+  grid-area: mn;
+  padding: 0 30px 0 20px;
+
+}
+
+.main-nav a {
+  color: var(--light);
+  text-decoration: none;
+  margin: 5px;
+}
+
+.main-nav a:hover {
+  color: var(--dark);
+}
+
+.sub-nav {
+  grid-area: sb;
+  padding: 0 40px 0 40px;
+}
+
+.sub-nav a {
+  color: var(--light);
+  text-decoration: none;
+  margin: 5px;
+}
+
+.sub-nav a:hover {
+  color: var(--dark);
+}
+
+
+form {
+  width: 52rem;
+  margin-top: 4%;
+  margin-left: 18.5%;
+  margin-bottom: 2%;
+  color: whitesmoke;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(11, 15, 13, 0.582);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  border-color: rgb(59, 59, 59);
+  padding: 20px 20px;
+}
+
+
+#container1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  /*muy importante*/
+  flex-direction: row;
+
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  /*muy importante*/
+  top: 15px;
+
+
+}
+
+.right div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+
+}
+
+.right #rightone {
+  position: absolute;
+  top: 30%;
+  left: 70%;
+
+}
+
+
+/*mn hna bdit*/
+.episode-list {
+  /*margin: 0 auto;*/
+  display: table-row;
+  flex-wrap: wrap;
+
+}
+
+.episode-list .foqlist {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*.foqlist {
+  display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}*/
+
+.episode {
+  /*flex: 1;*/
+  margin: 10px;
+  /*nadi*/
+  padding: 2px;
+  /*nadi*/
+  border: 1px solid #ccc;
+  /*nadi*/
+  /*zedt hado*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  height: 250px;
+}
+
+
+
+.episode:hover {
+  background-color: grey;
+  color: black;
+}
+
+.foqlist h1 {
+  display: flex;
+  align-items: center;
+  /*muy importante*/
+  flex-direction: row;
+  margin-left: 1.5%;
+}
+
+.foqlist button {
+  display: flex;
+  align-items: flex-end;
+  /*muy importante*/
+  margin-left: 20%;
+  margin-right: 3%;
+  margin-top: 8%;
+  margin-bottom: 2%;
+  background-color: rgb(240, 229, 229);
+  color: #000000;
+  border-color: #fff;
+  font-size: larger;
+}
+
+.episode h2 {
+  display: flex;
+  align-items: center;
+  /*muy importante*/
+  flex-direction: row;
+  margin-right: 5%;
+}
+
+
+
+.episode img,
+p {
+  display: flex;
+  justify-content: space-between;
+  display: inline;
+  width: 230px;
+  height: 155px;
+  border-radius: 10%;
+  margin-right: 10%;
+
+}
+
+.episode img {
+  border: 3px solid rgb(255, 255, 255);
+
+}
+
+
+
+.episode p {
+  display: flex;
+  flex-direction: row;
+  /*top: 20px;
+    top: 87%;
+  left: -10%; */
+  /*display: block;*/
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+/*.episode img {
+    max-width: 30%;
+    margin-right: 70%;
+  }
+  
+  /*.episode h2 {
+    margin-top: 10px;
+    font-size: 24px;
+  }
+  
+ /* .episode p {
+    margin-left: 50%;
+    
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  
