@@ -191,6 +191,14 @@ h1 {
   height: 35px;
 }
 
+.video {
+  margin-left: 3%;
+}
+
+.titlekbir {
+  text-align: center;
+}
+
 #logo {
   color: #E50914;
   margin: 0;
