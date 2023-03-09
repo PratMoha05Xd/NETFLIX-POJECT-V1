@@ -316,9 +316,9 @@ form {
   /*flex: 1;*/
   margin: 10px;
   /*nadi*/
-  padding: 2px;
+  border: 1px solid #ebe4e4;
   /*nadi*/
-  border: 1px solid #ccc;
+
   /*nadi*/
   /*zedt hado*/
   display: flex;
@@ -333,6 +333,9 @@ form {
 .episode:hover {
   background-color: grey;
   color: black;
+  padding: 2px;
+  border: 1px solid #ccc;
+  border-radius: 10%;
 }
 
 .foqlist h1 {
@@ -372,15 +375,15 @@ p {
   display: flex;
   justify-content: space-between;
   display: inline;
-  width: 230px;
-  height: 155px;
-  border-radius: 10%;
+  width: 200px;
+  height: 125px;
+  /*border-radius: 10%;*/
   margin-right: 10%;
 
 }
 
 .episode img {
-  border: 3px solid rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
 
 }
 
@@ -398,6 +401,10 @@ p {
   align-items: center;
 }
 
+.episode h2 {
+  margin-top: 10px;
+  font-size: 24px;
+}
 
 
 
@@ -406,10 +413,7 @@ p {
     margin-right: 70%;
   }
   
-  /*.episode h2 {
-    margin-top: 10px;
-    font-size: 24px;
-  }
+
   
  /* .episode p {
     margin-left: 50%;
