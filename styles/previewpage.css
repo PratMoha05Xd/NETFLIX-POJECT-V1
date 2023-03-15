@@ -314,18 +314,17 @@ form {
 
 .episode {
   /*flex: 1;*/
-  margin: 10px;
+  margin: 5px;
   /*nadi*/
-  border: 1px solid #ebe4e4;
+  /*border: 0.5px solid #ebe4e4;*/
   /*nadi*/
-
   /*nadi*/
   /*zedt hado*/
   display: flex;
   justify-content: center;
   align-items: center;
   width: 800px;
-  height: 250px;
+  height: 170px;
 }
 
 
@@ -335,7 +334,6 @@ form {
   color: black;
   padding: 2px;
   border: 1px solid #ccc;
-  border-radius: 10%;
 }
 
 .foqlist h1 {
@@ -384,9 +382,12 @@ p {
 
 .episode img {
   border: 1px solid rgb(255, 255, 255);
-
 }
 
+.episode img:hover{
+  border-radius: 9%;
+  background-image: url("https://mohamedjellal.me/Estudis/netfwalking/play.png");
+}
 
 
 .episode p {
